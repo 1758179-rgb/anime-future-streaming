@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bleach: Thousand-Year Blood War - ANIME FUTURE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cyber: {
+              bg: '#050b14',
+              panel: '#0a1628',
+              border: '#1e3a5f',
+              cyan: '#00f3ff',
+              cyanHover: '#00c4d0',
+              magenta: '#ff007f',
+              purple: '#8b5cf6',
+              darkCard: '#080e1a',
+              text: '#e5eefb'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            orbitron: ['Orbitron', 'sans-serif']
+          },
+          boxShadow: {
+            neon: '0 0 15px rgba(0, 243, 255, 0.35)',
+            strong: '0 0 25px rgba(0, 243, 255, 0.7)',
+            magenta: '0 0 20px rgba(255, 0, 127, 0.45)',
+            glass: '0 8px 24px rgba(0, 243, 255, 0.08)'
+          }
+        }
+      }
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #050b14; }
+    ::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 8px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00f3ff; }
+    .cyber-grid {
+      background-size: 38px 38px;
+      background-image:
+        linear-gradient(to right, rgba(0,243,255,0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,243,255,0.03) 1px, transparent 1px);
+    }
+    .glass-panel {
+      background: rgba(10,22,40,0.78);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(0,243,255,0.15);
+    }
+    .glass-panel:hover {
+      border-color: rgba(0,243,255,0.32);
+      box-shadow: 0 0 15px rgba(0,243,255,0.08);
+    }
+    .text-glow {
+      text-shadow: 0 0 10px rgba(0,243,255,0.75), 0 0 20px rgba(0,243,255,0.4);
+    }
+    .neon-border {
+      border: 2px solid rgba(0,243,255,0.5);
+      box-shadow: 0 0 10px rgba(0,243,255,0.3);
+    }
+  </style>
+</head>
+<body class="bg-cyber-bg text-cyber-text font-sans min-h-screen cyber-grid selection:bg-cyber-cyan selection:text-black">
+
+  <header class="sticky top-0 z-50 glass-panel border-b border-cyber-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition">
+        <div class="w-10 h-10 rounded-lg border border-cyber-cyan bg-cyber-cyan/10 flex items-center justify-center shadow-neon">
+          <i class="fa-solid fa-bolt-lightning text-cyber-cyan text-xl"></i>
+        </div>
+        <div>
+          <div class="font-orbitron text-xl sm:text-2xl tracking-wider text-cyber-cyan text-glow">ANIME</div>
+          <div class="font-orbitron text-xl sm:text-2xl tracking-wider text-white">FUTURE</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="px-4 py-2 rounded-xl bg-cyber-panel border border-cyber-border text-gray-300 hover:text-cyber-cyan hover:border-cyber-cyan transition text-sm">
+          <i class="fa-solid fa-arrow-left mr-2"></i>Back to Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Hero Section -->
+      <div class="relative rounded-3xl overflow-hidden border border-cyber-border shadow-neon bg-cyber-panel mb-12 min-h-[500px] flex items-center">
+        <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1200&auto=format&fit=crop&q=80')"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-cyber-bg via-cyber-bg/80 to-transparent"></div>
+        
+        <div class="relative z-10 p-8 md:p-12 max-w-3xl space-y-6">
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="px-3 py-1 rounded-full text-xs font-orbitron font-bold tracking-wider bg-cyber-magenta/20 text-cyber-magenta border border-cyber-magenta/40">FEATURED SERIES</span>
+            <span class="text-yellow-400 text-sm font-bold flex items-center gap-1"><i class="fa-solid fa-star"></i>9.9</span>
+            <span class="text-gray-400 text-sm font-medium">2024 - Ongoing</span>
+          </div>
+          <h1 class="font-orbitron font-black text-4xl sm:text-5xl lg:text-6xl text-white text-glow tracking-wide">BLEACH: THOUSAND-YEAR BLOOD WAR</h1>
+          <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+            Ichigo and the Soul Reapers face the Quincy war unleashed by the ancient blood feud that has simmered for a millennium. Experience the ultimate showdown as fate and destiny collide in this epic final arc.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-cyber-border/50 text-cyber-cyan border border-cyber-cyan/30">Action</span>
+            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-cyber-border/50 text-cyber-cyan border border-cyber-cyan/30">Adventure</span>
+            <span class="px-3 py-1 rounded-lg text-xs font-medium bg-cyber-border/50 text-cyber-cyan border border-cyber-cyan/30">Supernatural</span>
+          </div>
+          <div class="flex items-center gap-2 pt-4 text-sm">
+            <i class="fa-solid fa-circle text-cyber-magenta text-xs animate-pulse"></i>
+            <span class="text-cyber-magenta font-semibold">42 Episodes Confirmed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Episodes Section -->
+      <div class="space-y-8">
+        <div>
+          <h2 class="font-orbitron font-bold text-3xl text-white flex items-center gap-3 mb-2 text-glow">
+            <i class="fa-solid fa-play text-cyber-cyan"></i>Stream Episodes
+          </h2>
+          <p class="text-gray-400 text-sm">Click on any episode to stream directly from Google Drive.</p>
+        </div>
+
+        <!-- Episode Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Episode 41 -->
+          <div class="glass-panel p-6 rounded-2xl border border-cyber-border hover:border-cyber-cyan transition space-y-4 group">
+            <div class="flex items-start justify-between gap-4">
+              <div class="space-y-2 flex-grow">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 rounded-lg bg-cyber-cyan/20 text-cyber-cyan text-xs font-orbitron font-bold">EPISODE 41</span>
+                  <span class="text-xs text-gray-400">Latest</span>
+                </div>
+                <h3 class="font-orbitron font-bold text-xl text-white group-hover:text-cyber-cyan transition">The Final Battle Begins</h3>
+                <p class="text-gray-400 text-sm">The conflict reaches its peak as destinies intertwine and the true power of the Quincy unfolds.</p>
+              </div>
+              <div class="text-4xl text-cyber-cyan/30 group-hover:text-cyber-cyan transition">41</div>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-cyber-border">
+              <span class="text-xs text-gray-400">Watch on Google Drive</span>
+              <a href="https://drive.google.com/file/d/16WKuep15ZwUTpCIZVM0A0hHvHuIbn7to/view?usp=sharing" target="_blank" class="px-4 py-2 rounded-xl bg-cyber-cyan text-cyber-bg font-orbitron font-bold text-xs shadow-neon hover:bg-cyber-cyanHover transition flex items-center gap-2">
+                <i class="fa-solid fa-play"></i>Stream Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Episode 42 -->
+          <div class="glass-panel p-6 rounded-2xl border border-cyber-border hover:border-cyber-cyan transition space-y-4 group">
+            <div class="flex items-start justify-between gap-4">
+              <div class="space-y-2 flex-grow">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 rounded-lg bg-cyber-magenta/20 text-cyber-magenta text-xs font-orbitron font-bold">EPISODE 42</span>
+                  <span class="text-xs text-gray-400">Final Episode</span>
+                </div>
+                <h3 class="font-orbitron font-bold text-xl text-white group-hover:text-cyber-cyan transition">The End and the Beginning</h3>
+                <p class="text-gray-400 text-sm">The conclusion of the Thousand-Year Blood War arc. Witness the fate of Ichigo and the Soul Society.</p>
+              </div>
+              <div class="text-4xl text-cyber-magenta/30 group-hover:text-cyber-magenta transition">42</div>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-cyber-border">
+              <span class="text-xs text-gray-400">Watch on Google Drive</span>
+              <a href="https://drive.google.com/file/d/1fLHjKIo_2o2DNEahVb9cRvKvDm6viccn/view?usp=sharing" target="_blank" class="px-4 py-2 rounded-xl bg-cyber-magenta text-white font-orbitron font-bold text-xs shadow-magenta hover:brightness-110 transition flex items-center gap-2">
+                <i class="fa-solid fa-play"></i>Stream Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="glass-panel p-8 rounded-2xl border border-cyber-border space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="space-y-2">
+              <h4 class="font-orbitron font-bold text-sm text-cyber-cyan flex items-center gap-2">
+                <i class="fa-solid fa-tv"></i>Series Info
+              </h4>
+              <p class="text-sm text-gray-300">42 Episodes Total</p>
+              <p class="text-xs text-gray-400">Status: Concluded 2024</p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-orbitron font-bold text-sm text-cyber-cyan flex items-center gap-2">
+                <i class="fa-solid fa-star"></i>Rating
+              </h4>
+              <p class="text-sm text-gray-300">9.9 / 10.0</p>
+              <p class="text-xs text-gray-400">Community Rating</p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-orbitron font-bold text-sm text-cyber-cyan flex items-center gap-2">
+                <i class="fa-solid fa-link"></i>Available
+              </h4>
+              <p class="text-sm text-gray-300">Google Drive Streams</p>
+              <p class="text-xs text-gray-400">Episodes 41-42 Ready</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="glass-panel p-8 rounded-2xl border border-cyber-border space-y-4">
+          <h3 class="font-orbitron font-bold text-lg text-white flex items-center gap-2 text-glow">
+            <i class="fa-solid fa-scroll"></i>Synopsis
+          </h3>
+          <p class="text-gray-300 leading-relaxed">
+            The Thousand-Year Blood War marks the final arc of the Bleach saga. After centuries of waiting, the Quincy King Yhwach emerges to challenge Soul Society and initiate the ultimate conflict. Ichigo Kurosaki and his allies must face their greatest challenge yet as the line between life, death, and soul becomes blurred. With powers awakening and truths revealed, this epic conclusion brings closure to the interconnected fates of heroes and villains alike.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+            <div class="space-y-2">
+              <h4 class="font-orbitron text-sm font-bold text-cyber-cyan">Key Characters</h4>
+              <ul class="text-xs text-gray-400 space-y-1">
+                <li>• Ichigo Kurosaki - Substitute Soul Reaper</li>
+                <li>• Yhwach - Quincy King</li>
+                <li>• Rukia Kuchiki - Soul Reaper</li>
+                <li>• Aizen Sosuke - Mysterious Force</li>
+              </ul>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-orbitron text-sm font-bold text-cyber-cyan">Themes</h4>
+              <ul class="text-xs text-gray-400 space-y-1">
+                <li>• Ancient Conflict & Destiny</li>
+                <li>• Power & Sacrifice</li>
+                <li>• Soul Bonds & Betrayal</li>
+                <li>• Final Resolution</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-cyber-border bg-cyber-panel/80 py-8 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <div class="flex items-center justify-center gap-2">
+        <i class="fa-solid fa-bolt-lightning text-cyber-cyan"></i>
+        <span class="font-orbitron font-black text-lg text-cyber-cyan">ANIME FUTURE</span>
+      </div>
+      <p class="text-xs text-gray-400">Bleach: Thousand-Year Blood War Streaming Hub</p>
+      <p class="text-xs text-gray-500">© 2077 ANIME FUTURE NET. All rights reserved.</p>
+      <a href="index.html" class="inline-block text-xs text-cyber-cyan hover:text-cyber-cyanHover transition font-semibold">
+        <i class="fa-solid fa-arrow-left mr-1"></i>Back to Main Portal
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
